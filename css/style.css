@@ -70,6 +70,17 @@ aside{
     margin:20px;
 }
 
+.logo-small{
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo-xs{
+    height: 40px;
+    margin:20px;
+}
+
 /* NAV ASIDE TOP-----------  */
 
 .nav-aside-top a{
@@ -150,14 +161,19 @@ hr{
 }
 
 .account{
+    display: flex;
+    align-items: center;
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
     color: white;
 }
 
 .user{
-    margin-right: 5px;
-    font-size: 25px; 
+    margin-right: 8px;
+    height: 30px; 
+    background-color:#808080;
+    border-radius: 50%;
 }
 
 /* NAV-CONTENT--------  */
@@ -170,6 +186,7 @@ hr{
 .link-navigation{
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
 }
 
 .nav-content{
@@ -202,6 +219,7 @@ hr{
     display: flex;
     flex-wrap: wrap;
     padding-top: 30px; 
+    
 }
 .title-row{
     color: white;
@@ -209,11 +227,10 @@ hr{
 }
 
 .list-playlist{
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 15px);
     text-align: center;
     justify-content: center;
-    padding-right: 15px;
-
+    margin-right: 15px;
 }
 
 .album{
@@ -237,7 +254,7 @@ hr{
 
 .subtitle{
     color:#6d6d6d;
-    margin-top:10px;
+    margin:10px;
 }
 
 .overlay{
@@ -297,7 +314,7 @@ footer{
 }
 
 .album-small{
-    height: 50px;
+    height: 40px;
 }
 
 .whislist, small{
@@ -373,7 +390,7 @@ footer{
 }
 
 .icons-footer-right{
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .volume-bar{
@@ -387,5 +404,62 @@ footer{
     width: 30%;
     height:5px;
     border-radius: 4px;
+}
+
+/* MEDIA QUERYS-------  */
+
+/* media query lg-----  */
+@media screen and  (max-width:1100px){
+    .list-playlist{
+        width: calc(100% / 4);
+    }
+}
+
+
+/* media query s-----  */
+@media screen and  (max-width:700px){
+    .list-playlist{
+        width: calc(100% / 2);
+    }
+    .whislist{
+        display: block;
+    }
+    .icons-footer{
+        padding: 10px;
+    } 
+}
+
+
+/* media query xs-----  */
+@media screen and  (max-width:600px){
+    aside{
+        width: 70px;
+    }
+    header{
+        width: calc(100% - 70px);
+    }
+
+    .logo, .title-playlist, .nav-aside-bottom, .add-playlist, hr, #text-account{
+        display: none;
+    }
+    .nav-aside-top{
+        flex-grow: 1; 
+    }
+
+    .logo-small{
+        display: flex;
+    }
+
+    .download{
+        text-align: center;
+    }
+
+    .account{
+        justify-content: center;
+    }
+
+    .user{
+        margin-right: 0px;
+    }
 
 }

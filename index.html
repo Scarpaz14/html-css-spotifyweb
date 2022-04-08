@@ -28,13 +28,16 @@
             <div class="logo">
                 <img class="logo-spotify" src="img/logo.svg" alt="logo-spotify">
             </div>
+            <div class="logo-small">
+                <img class="logo-xs" src="img/logo-small.svg" alt="">
+            </div>
             <!-- /logo spotify------> 
             <!-- prima nav ---->
             <nav class="nav-aside-top">
                 <ul>
-                    <li><a href=""><img class="icon-nav" src="img/home.svg" alt=""> Home</a></li>
-                    <li><a href=""><img class="icon-nav" src="img/search.svg" alt=""> Cerca</a></li>
-                    <li><a href=""><img class="icon-nav" src="img/libreria.svg" alt=""> La tua libreria</a></li>
+                    <li><a href=""><img class="icon-nav" src="img/home.svg" alt=""> <span id="text-account">Home</span></a></li> 
+                    <li><a href=""><img class="icon-nav" src="img/search.svg" alt=""> <span id="text-account">Cerca</span></a></li>
+                    <li><a href=""><img class="icon-nav" src="img/libreria.svg" alt=""> <span id="text-account">La tua libreria</span></a></li>
                 </ul>
             </nav>
             <!-- /prima nav ---->
@@ -59,11 +62,11 @@
             <!-- /seconda nav  -->
             <!-- sezione account  -->
             <div class="download">
-                <i class="fa-solid fa-circle-down"></i> <span>Installa app</span>
+                <i class="fa-solid fa-circle-down"></i> <span id="text-account">Installa app</span>
             </div>
             <hr>
             <div class="account">
-                <i class="user fa-solid fa-circle-user"></i><span>John Doe</span>
+                <img class="user" src="img/profile.svg" alt=""><span id="text-account">John Doe</span>
             </div>
         </aside>
     <!-- /colonna aside di sinistra  -->
@@ -226,55 +229,50 @@
     <!-- /parte centrale app -->
     <!-- footer  -->
     <footer>
-        
-            <!-- contenitore sinistro footer  -->
-            <div class="container-left">
-                <div class="container-album-small">
-                    <img class="album-small" src="img/sinister.jpeg" alt="">
-                </div>
-                <div class="small-title-album">
-                    <h5 class="song-artist"> Sinister</h5>
-                    <small class="name-song">Brano Nome</small>
-                </div>
-                <div class="whislist">
-                    <i class=" heart fa-regular fa-heart"></i> <i class="fa-regular fa-folder"></i>
-                </div>
+        <!-- contenitore sinistro footer  -->
+        <div class="container-left">
+            <div class="container-album-small">
+                <img class="album-small" src="img/sinister.jpeg" alt="">
             </div>
-            <!-- /contenitore sinistro footer  -->
-
-            <!-- contenitore centrale footer  -->
-            <div class="container-center">
-                <div class="icons-container">
-                    <div class="icons-footer"><i class="fa-solid fa-shuffle"></i></div>
-                    <div class="icons-footer"><i class="fa-solid fa-backward-fast"></i></div>
-                    <div class="icons-footer play"><i class="fa-regular fa-circle-play"></i></div>
-                    <div class="icons-footer"><i class="fa-solid fa-forward-fast"></i></div>
-                    <div class="icons-footer"><i class="fa-solid fa-rotate-right"></i></div>
-                </div>
-                <div class="time-bar-container">
-                    <div class="spent-time">0:25</div>
-                    <div class="time-bar"><div class="time-bar-spent"></div></div>
-                    <div class="total-time">4:35</div>
-                </div>
+            <div class="small-title-album">
+                <h5 class="song-artist"> Sinister</h5>
+                <small class="name-song">Brano Nome</small>
             </div>
-            <!-- /contenitore centrale footer  -->
-
-            <!-- contenitore destro footer  -->
-            <div class="container-right">
-                <div class="icons-right">
-                    <div class="icons-footer-right"><i class="fa-solid fa-list-ul"></i></div>
-                    <div class="icons-footer-right"><i class="fa-solid fa-desktop"></i></div>
-                    <div class="icons-footer-right"><i class="fa-solid fa-volume-high"></i></div>
-                    <div class="volume-bar"><div class="volume-bar-used"></div></div>
-                </div>
+            <div class="whislist">
+                <i class=" heart fa-regular fa-heart"></i> <i class="fa-regular fa-folder"></i>
             </div>
-            <!-- /contenitore destro footer  -->
+        </div>
+        <!-- /contenitore sinistro footer  -->
 
+        <!-- contenitore centrale footer  -->
+        <div class="container-center">
+            <div class="icons-container">
+                <div class="icons-footer"><i class="fa-solid fa-shuffle"></i></div>
+                <div class="icons-footer"><i class="fa-solid fa-backward-fast"></i></div>
+                <div class="icons-footer play"><i class="fa-regular fa-circle-play"></i></div>
+                <div class="icons-footer"><i class="fa-solid fa-forward-fast"></i></div>
+                <div class="icons-footer"><i class="fa-solid fa-rotate-right"></i></div>
+            </div>
+            <div class="time-bar-container">
+                <div class="spent-time">0:25</div>
+                <div class="time-bar"><div class="time-bar-spent"></div></div>
+                <div class="total-time">4:35</div>
+            </div>
+        </div>
+        <!-- /contenitore centrale footer  -->
 
-        
-            
-
+        <!-- contenitore destro footer  -->
+        <div class="container-right">
+            <div class="icons-right">
+                <div class="icons-footer-right"><i class="fa-solid fa-list-ul"></i></div>
+                <div class="icons-footer-right"><i class="fa-solid fa-desktop"></i></div>
+                <div class="icons-footer-right"><i class="fa-solid fa-volume-high"></i></div>
+                <div class="volume-bar"><div class="volume-bar-used"></div></div>
+            </div>
+        </div>
+        <!-- /contenitore destro footer  -->
     </footer>
+
     
 </body>
 </html>
