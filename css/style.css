@@ -164,6 +164,7 @@ hr{
 
 .central-content{
     width: 100%;
+    overflow-y: auto;
 }
 
 .link-navigation{
@@ -194,22 +195,24 @@ hr{
 
 .album-container{
     padding: 50px 30px;
+    
 }
 
 .row{
     display: flex;
+    flex-wrap: wrap;
     padding-top: 30px; 
 }
 .title-row{
-    color: white;  
+    color: white;
+    margin-top:50px;  
 }
 
 .list-playlist{
-    display: flex;
-    flex-wrap: wrap;
     width: calc(100% / 6);
     text-align: center;
     justify-content: center;
+    padding-right: 15px;
 
 }
 
@@ -222,6 +225,12 @@ hr{
     margin-top:20px;
     color:white;
 }
+
+.album-circle,.overlay-circle{
+    border-radius: 50%;
+}
+
+
 .background-image-album{
     position: relative;
 }
@@ -243,49 +252,140 @@ hr{
 
 .play-icon{
     display: none;
-    font-size: 50px;
+    font-size: 70px;
     color:white;
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50% -50%);    
+    transform: translate(-50%,-50%);    
 }
 
 .list-playlist:hover .overlay{
     display: block;
+    
 }
 
 .list-playlist:hover .play-icon{
     display: block;
 }
 
+.row-center{
+    display: flex;
+}
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* FOOTER----------  */
 
 footer{
     height: 80px;
     background-color: #282828 ;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
+.container-left{
+    display: flex;
+    align-items: center;
+}
+
+.small-title-album{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.album-small{
+    height: 50px;
+}
+
+.whislist, small{
+    color: #6d6d6d;
+    display: flex;
+}
+.song-artist{
+    color: white;
+}
+.name-song{
+    font-weight: 600;
+    font-size: 12px;
+}
+.heart{
+    margin-right: 10px;
+}
+
+/* CONTENITORE CENTRALE FOOTER  */
+
+.container-center{
+    width:40%;
+}
+
+.icons-container{
+    display: flex;
+    color:white;
+    font-size: 18px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-footer{
+    padding: 0 20px;
+}
+
+.time-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-bar{
+    width: 80%;
+    height:5px;
+    border-radius: 4px;
+    background-color:#6d6d6d;
+    margin: 10px
+}
+.time-bar-spent{
+    background-color: white;
+    width: 10%;
+    height:5px;
+    border-radius: 4px;
+}
+
+.play{
+    font-size: 30px;
+}
+
+.spent-time, .total-time{
+    font-size: 12px;
+    color:white;
+    font-weight: 600;
+}
+
+/* CONTENITORE DESTRO FOOTER  */
+
+.icons-right{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color:white;
+}
+
+.icons-footer-right{
+    padding: 0 10px;
+}
+
+.volume-bar{
+    width: 100px;
+    height:5px;
+    border-radius: 4px;
+    background-color:#6d6d6d;
+}
+.volume-bar-used{
+    background-color: white;
+    width: 30%;
+    height:5px;
+    border-radius: 4px;
+
+}
