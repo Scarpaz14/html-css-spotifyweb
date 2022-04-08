@@ -36,6 +36,7 @@ header{
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    margin-right: 20px;
 }
 .btn-uppgrade:hover{
     color:#26d16b;
@@ -254,7 +255,7 @@ hr{
 
 .subtitle{
     color:#6d6d6d;
-    margin:10px;
+    margin:10px 0;
 }
 
 .overlay{
@@ -463,3 +464,33 @@ footer{
     }
 
 }
+
+/* SEZIONE HOVER--------  */
+
+.uppgrade:hover, .play:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#text-account:hover, .nav-aside-bottom a:hover, .add-playlist:hover, .nav-content a:hover, .whislist:hover{
+    color:white;
+}
+
+.download, .whislist{
+    cursor: pointer;
+}
+
+.name-song:hover{
+    text-decoration:underline;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-aside-top a:hover{
+    border-left: 2px solid #26d16b;
+
+}
+
+
+
+
